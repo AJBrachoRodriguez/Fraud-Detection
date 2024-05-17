@@ -4,3 +4,4 @@ pyspark
 seaborn
 scikit-learn
 imbalanced-learn
+ydata_profiling
