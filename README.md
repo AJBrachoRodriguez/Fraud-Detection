@@ -22,11 +22,33 @@ of the project is to establish if a transaction is fraudulent or not using advan
 2. requirements.txt
 3. .gitignore
 4. README.md
+5. tuningDT.py
+6. tuningLR.py
+7. tuningNB.py
+8. tuningRF.py
 
 ### **How to Install and Run the Project**  🏃
 
-You must set up an python environment installing the package included in the requirements file (.txt). Then, you can use any Integrated Development Environment (IDE) such as Jupyter or Visual Studio Code to run the
+1. You must set up an python environment installing the package included in the requirements file (.txt). Then, you can use any Integrated Development Environment (IDE) such as Jupyter or Visual Studio Code to run the
 notebook.ipynb file.
+
+2. You need to have installed Apache Spark in your PC, you can follow this guide is you have Linux/Ubuntu (otherwise, you´ll need to find another guide):
+
+https://medium.com/@alexangelb/how-to-install-pyspark-in-linux-ubuntu-2f81a4006a36
+
+3. Use the following command in you terminal (in the directory where the python scripts are) one by one:
+
+$spark-submit --driver-memory 10g tuningDT.py
+$spark-submit --driver-memory 10g tuningLR.py
+$spark-submit --driver-memory 10g tuningNB.py
+$spark-submit --driver-memory 10g tuningRF.py
+
+4. Then, some folders with models "tuned" will appear in your currect directory:
+
+/tuningDT/
+/tuningLR/
+/tuningNB/
+/tuningRF/
 
 ### **How to use the project**  📂
 
@@ -34,15 +56,15 @@ You need to download the csv file from here:
 
 https://www.kaggle.com/datasets/ealaxi/paysim1/download
 
-Then, upload it to the notebook.ipynb and start deploying the project.
+Then, start deploying the project following the steps explained in the previous stage.
 
 ### **Status of the project**  🚉
 
-The project is currently being built in collaboration with Victor Carracedo and Elvis Donayre.
+The project was built in collaboration with Victor Carracedo and Elvis Donayre. The optimization in the PySpark implementation is currently being deployed.
 
 ### **Contributions**  ✍️
 
-I would like to you to encourage to contribute in any form to the project through this public repository.
+We would like you to encourage to contribute in any form to the project through this public repository.
 
 ### **Licence**  👮
 
