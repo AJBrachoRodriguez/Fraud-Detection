@@ -1,5 +1,5 @@
 # **Fraud detection**  📘
-![database with api](ima/frauddetection.png)
+![database with api](img/frauddetection.png)
 
 ### **Description**  🗒️
 
@@ -38,11 +38,15 @@ Then, upload it to the notebook.ipynb and start deploying the project.
 
 ### **Status of the project**  🚉
 
+<<<<<<< Updated upstream
 The project is currently being built in collaboration with Victor Carracedo, Elvis Donayre and Alexangel Bracho. 
+=======
+The project is currently being built in collaboration with Victor Carracedo and Elvis Donayre.
+>>>>>>> Stashed changes
 
 ### **Contributions**  ✍️
 
-I would like to you to encourage to contribute in any form to the project through this public repository. 
+I would like to you to encourage to contribute in any form to the project through this public repository.
 
 ### **Licence**  👮
 
