@@ -29,8 +29,7 @@ of the project is to establish if a transaction is fraudulent or not using advan
 
 ### **How to Install and Run the Project**  🏃
 
-1. You must set up an python environment installing the package included in the requirements file (.txt). Then, you can use any Integrated Development Environment (IDE) such as Jupyter or Visual Studio Code to run the
-notebook.ipynb file.
+1. You must set up an python environment installing the package included in the requirements file (.txt). Then, you can use any Integrated Development Environment (IDE) such as Jupyter or Visual Studio Code to run the notebook.ipynb file.
 
 2. You need to have installed Apache Spark in your PC, you can follow this guide is you have Linux/Ubuntu (otherwise, you´ll need to find another guide):
 
@@ -38,17 +37,21 @@ https://medium.com/@alexangelb/how-to-install-pyspark-in-linux-ubuntu-2f81a4006a
 
 3. Use the following command in you terminal (in the directory where the python scripts are) one by one:
 
-$spark-submit --driver-memory 10g tuningDT.py
-$spark-submit --driver-memory 10g tuningLR.py
-$spark-submit --driver-memory 10g tuningNB.py
-$spark-submit --driver-memory 10g tuningRF.py
+* $spark-submit --driver-memory 10g tuningDT.py 
+* $spark-submit --driver-memory 10g tuningLR.py 
+* $spark-submit --driver-memory 10g tuningNB.py 
+* $spark-submit --driver-memory 10g tuningRF.py 
 
 4. Then, some folders with models "tuned" will appear in your currect directory:
 
-/tuningDT/
-/tuningLR/
-/tuningNB/
-/tuningRF/
+* /tuningDT/
+* /tuningLR/
+* /tuningNB/
+* /tuningRF/
+
+We must remark that these models are *CrossValidatorModel* type which come from a pipeline built in the python scripts numerated before.
+
+5. At deploying the project, there will be a parquet file (*df.parquet*) built by the oversampling method using *Sklearn*.
 
 ### **How to use the project**  📂
 

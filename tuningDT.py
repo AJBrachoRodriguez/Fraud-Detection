@@ -105,7 +105,7 @@ print("The test dataset is:")
 test.show(10)
 
 
-##### Model: Random Forest
+##### Model: Decision Tree
 
 # Hyperparameters Tunning: Train Validation Split
 
@@ -141,5 +141,6 @@ bestPipeline = cvModel.bestModel
 bestModel = bestPipeline.stages[1] # type: ignore
 
 # save the model
-cvModel.save("tuningDTProof")
+cvModel.save("tuningDT")
 print("The process of tuning has finished!")
+

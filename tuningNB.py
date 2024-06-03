@@ -140,5 +140,5 @@ bestPipeline = cvModel.bestModel
 bestModel = bestPipeline.stages[1] # type: ignore
 
 # save the model
-cvModel.save("tuningNBProof")
+cvModel.save("tuningNB")
 print("The process of tuning has finished!")
