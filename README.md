@@ -22,10 +22,12 @@ of the project is to establish if a transaction is fraudulent or not using advan
 2. requirements.txt
 3. .gitignore
 4. README.md
-5. tuningDT.py
-6. tuningLR.py
-7. tuningNB.py
-8. tuningRF.py
+5. LICENCE
+6. main.py
+7. tuningDT.py
+8. tuningLR.py
+9. tuningNB.py
+10. tuningRF.py
 
 ### **How to Install and Run the Project**  🏃
 
